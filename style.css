@@ -1,0 +1,200 @@
+:root {
+    --moderate-violet: hsl(263, 55%, 52%);
+    --white: hsl(0, 0%, 100%);
+    --light-gray: hsl(0, 0%, 81%);
+    --light-grayish-blue: hsl(210, 46%, 95%);
+    --very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --very-dark-blackish-blue: hsl(219, 29%, 14%);
+    --text-family: "Barlow Semi Condensed";
+
+}
+
+body {
+    background-color: var(--light-gray);
+   
+
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.box_daniel {
+    
+    background-color: var(--moderate-violet);
+    margin: 15px 30px;
+    padding: 27px;
+    border-radius: 10px;
+    background-image:url(images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: 80% 0px;
+
+}
+
+.box_jonathan {
+    
+    background-color: var(--very-dark-grayish-blue);
+    margin: 15px 30px;
+    padding: 27px;
+    border-radius: 10px;
+}
+
+.box_jeanette {
+    background-color: var(--white);
+    margin: 15px 30px;
+    padding: 27px;
+    border-radius: 10px;
+}
+
+.box_patrick {
+    background-color: var(--very-dark-blackish-blue);
+    margin: 15px 30px;
+    padding: 27px;
+    border-radius: 10px;
+}
+
+.box_kira {
+    background-color: var(--white);
+    margin: 15px 30px;
+    padding:  27px;
+    border-radius: 10px;
+}
+
+.box__top {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+
+}
+
+
+.picture_profile {
+    
+    border-radius: 25px;
+    width: 25px;
+    border: rgb(220, 220, 220, 0.5) solid;
+      
+}
+
+
+
+.box__person--name {
+    font-family: var(--text-family);
+    font-weight: 600;
+    font-size: 13px;
+    color: var(--light-gray);
+}
+
+.box__person--type {
+    font-family: var(--text-family);
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
+    color: var(--light-gray);
+    opacity: 0.5;
+    
+}
+
+.box__text {
+    margin-top: 20px;
+}
+
+.text-title {
+    font-family: var(--text-family);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    color: var(--white);
+    
+}
+
+.text-comment {
+    margin-top: 15px;
+    font-family: var(--text-family);
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 18px;
+    color:var(--light-grayish-blue);
+    opacity: 0.7;
+}
+
+.box__person--name-dark {
+    font-family: var(--text-family);
+    font-weight: 600;
+    font-size: 13px;
+    color: var(--very-dark-grayish-blue);
+}
+
+.box__person--type-dark {
+    font-family: var(--text-family);
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
+    color: var(--very-dark-grayish-blue);
+    opacity: 0.5;
+    
+}
+
+
+
+.text-title-dark {
+    font-family: var(--text-family);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    color: var(--very-dark-grayish-blue);
+    
+}
+
+.text-comment-dark {
+    margin-top: 15px;
+    font-family: var(--text-family);
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 18px;
+    color:var(--very-dark-grayish-blue);
+    opacity: 0.7;
+}
+
+@media screen and (min-width:1440px) {
+    body {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: auto auto;
+        gap: 25px;
+        margin: 10vh 10vw;
+        background-color: var(--light-grayish-blue);
+        justify-content: center;
+    }
+    .box_daniel {
+    
+        grid-column: 1 / span 2;
+        grid-row: 1;
+        margin: 0px
+    
+    }
+    
+    .box_jonathan {
+        
+        grid-column: 3;
+        grid-row: 1;
+        margin: 0px
+    }
+    
+    .box_jeanette {
+        grid-column: 1;
+        grid-row: 2;
+        margin: 0px
+    }
+    
+    .box_patrick {
+        grid-column: 2 / span 2;
+        grid-row: 2;
+        margin: 0px
+    }
+    
+    .box_kira {
+        grid-column: 4;
+        grid-row: span 2;
+        margin: 0px
+    }
+}
